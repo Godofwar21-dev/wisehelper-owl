@@ -1,0 +1,25 @@
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+#owl-container {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+#owl {
+  width: 100px;
+  transition: filter 0.3s ease;
+}
+
+/* Night mode */
+@media (prefers-color-scheme: dark) {
+  #owl {
+    filter: drop-shadow(0 0 10px rgba(255, 204, 100, 0.6));
+  }
+}
